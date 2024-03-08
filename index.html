@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Profil Mahasiswa</h1>
-
+        
     <h2>Biografi</h2>
         <p>Saya adalah mahasiswa yang mempelajari ilmu Teknik Informatika di Universitas Pendidikan Nasional. Saya memliki ketertarikan menjadi seorang Programmer. </p>
     <h2>Pendidikan</h2>
@@ -58,5 +58,17 @@
                 <td>Ir Gede Humaswara Prathama S.T.,M.T.</td>
             </tr>
         </table>
+    <h2>Formulir Kontak</h2>
+        <from action="sumbit_from.php" method="post">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="fullname" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="emailaddr" required><br><br>
+
+            <label for="message">Pesan:</label>
+            <textarea id="massage" name="usermassege" rows="4" required></textarea><br><br>
+            <button type="submit">Kirim</button>
+    </from>
 </body>
 </html>
